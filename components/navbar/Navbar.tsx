@@ -26,7 +26,7 @@ const Links = [
 
 export default function Navbar() {
   return (
-    <nav>
+    <nav className="fixed top-0 right-0 left-0">
       <ul className="flex space-x-4 items-center justify-center py-4 shadow-lg">
         {Links.map((link) => (
           <Link key={link.href} href={link.href}>
