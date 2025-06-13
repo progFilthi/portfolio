@@ -46,9 +46,9 @@ export default function page() {
         <div className="flex gap-8 flex-wrap items-center justify-center">
           {technologies.map((tech) => (
             <div key={tech.name}>
-              <div className="border bg-neutral-100 p-8 rounded-lg w-32 h-32 flex flex-col justify-between">
+              <div className="border bg-green-100 p-8 rounded-lg w-32 h-32 flex flex-col justify-between cursor-pointer space0-y-12">
                 <span className="text-3xl">{tech.icon}</span>
-                <span>{tech.name}</span>
+                <span className="font-bold pt-6">{tech.name}</span>
               </div>
             </div>
           ))}

@@ -7,11 +7,11 @@ interface ContainerProps {
 
 export default function Container({ children }: ContainerProps) {
   return (
-    <div>
+    <div className="bg-[#FFF7F2] h-screen text-[#321908] ">
       <header>
         <Navbar />
       </header>
-      <main className="flex items-center justify-center mt-24">{children}</main>
+      <main className="flex items-center justify-center pt-24">{children}</main>
       {/* <footer>Footer</footer> */}
     </div>
   );
