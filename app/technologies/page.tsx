@@ -39,16 +39,17 @@ export default function page() {
     },
   ];
   return (
-    <div>
-      <h1 className="text-center pb-24">This is the technologies page</h1>
-
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-center pb-4 text-4xl font-semibold">Technologies</h1>
       <div>
-        <div className="flex gap-8 flex-wrap items-center justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
           {technologies.map((tech) => (
             <div key={tech.name}>
-              <div className="border bg-green-100 p-8 rounded-lg w-32 h-32 flex flex-col justify-between cursor-pointer space0-y-12">
-                <span className="text-3xl">{tech.icon}</span>
-                <span className="font-bold pt-6">{tech.name}</span>
+              <div className="flex items-center justify-center flex-col shadow-sm bg-[#FFCBA7] p-4 rounded-lg w-32 h-32 cursor-pointer">
+                <span className="text-3xl bg-white rounded-full p-3 mt-2 shadow-md">
+                  {tech.icon}
+                </span>
+                <span className="font-bold pt-8">{tech.name}</span>
               </div>
             </div>
           ))}
