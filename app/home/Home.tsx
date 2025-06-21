@@ -6,7 +6,7 @@ import React from "react";
 export default function Homepage() {
   const router = useRouter();
   const navToProjects = () => {
-    router.push("/projects");
+    router.push("/about-me");
   };
   return (
     <section className="sm:flex items-center justify-center flex-col">
@@ -26,17 +26,17 @@ export default function Homepage() {
           </h1>
           <p>
             I am a front-end developer, focused on making Responsive & elegant
+            <br />
             designs while turning Your ideas Into reality
           </p>
-          <p className="text-[#8A7E77]">You will not be disappointed!</p>
         </div>
         <div className="flex items-center justify-center">
           <button
             onClick={navToProjects}
             type="button"
-            className="bg-[#FFCBA7] py-2 px-4 rounded-md cursor-pointer"
+            className="bg-[#FFCBA7] py-2 px-4 rounded-md cursor-pointer my-8"
           >
-            Projects
+            Learn More!
           </button>
         </div>
       </div>

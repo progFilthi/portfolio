@@ -1,13 +1,16 @@
 import React from "react";
 import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import {
+  SiExpress,
   SiJavascript,
+  SiMongodb,
   SiNextdotjs,
+  SiNodedotjs,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 
-export default function page() {
+export default function TechnologiesPage() {
   const technologies = [
     {
       name: "Html",
@@ -37,12 +40,24 @@ export default function page() {
       name: "Nextjs",
       icon: <SiNextdotjs />,
     },
+    {
+      name: "MongoDB",
+      icon: <SiMongodb />,
+    },
+    {
+      name: "Nodejs",
+      icon: <SiNodedotjs />,
+    },
+    {
+      name: "Express",
+      icon: <SiExpress />,
+    },
   ];
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mt-32">
       <h1 className="text-center pb-4 text-4xl font-semibold">Technologies</h1>
       <div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
           {technologies.map((tech) => (
             <div key={tech.name}>
               <div className="flex items-center justify-center flex-col shadow-sm bg-[#FFCBA7] p-4 rounded-lg w-32 h-32 cursor-pointer">

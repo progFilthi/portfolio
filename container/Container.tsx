@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/app/Navbar/Navbar";
 import React from "react";
 
 interface ContainerProps {
@@ -7,7 +7,7 @@ interface ContainerProps {
 
 export default function Container({ children }: ContainerProps) {
   return (
-    <div className="bg-[#FFF7F2] h-screen text-[#321908] ">
+    <div className="bg-[#FFF7F2] h-full text-[#321908] ">
       <header>
         <Navbar />
       </header>

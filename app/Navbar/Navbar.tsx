@@ -10,7 +10,7 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="fixed top-0 left-0 right-0 mx-auto z-50 shadow rounded-b-lg">
+    <nav className="fixed top-0 left-0 right-0 mx-auto z-50 shadow rounded-b-lg backdrop-blur-lg">
       <div className="flex items-center justify-between mx-10 px-4 py-4">
         <Link href="/">
           <span className="font-bold text-lg cursor-pointer">Portfolio</span>
